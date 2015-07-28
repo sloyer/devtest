@@ -19,9 +19,10 @@ I have three requests I want done though.
     - Don't forget about the menu.....
 - Use [GIT](https://github.com/) to track your progress. I'd like to be able to see what you do and how you build the project. 
     - A good way to do this is commit after everytime you finish something like, Menu sections, Header section, etc. You could also just commit every 15 minutes with what you've done. Make commit messages descriptful but not to long. 
-    - Clone this repo
-        - Make a new branch
+    - Fork this repo
+   		- Clone the Fork
         - Make your commits
+        - Push your changes
         - Then make a merge request when finished to sumbit your work. 
 
 - Make that mountain image area, a slideshow using Javascript/jQuery. 
