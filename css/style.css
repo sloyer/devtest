@@ -1,0 +1,87 @@
+/* definitions */
+ul, li, a {
+	list-style-type: none;
+	text-decoration: none;
+}
+a, h1, h2, h3, h4, h5, h6, ul, li, p {
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+}
+body, a, h1 {
+	font-family: Helvetica Neue;
+	text-align: center;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+nav {
+	margin-right: 15%;
+}
+nav ul li{
+	display: inline-block;
+	width: auto;
+}
+nav li{
+	width: auto;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* 
+________________________________________________________
+ this wraps the whole website */
+#wrapper {
+	margin-top: 0;
+	background: #eeeeee;
+	width: auto;
+	height:100%;
+}
+
+/* 
+________________________________________________________
+.left and .right are simply margin classes to keep the sites content centered at 70% */
+.left {
+	float: left;
+	margin-right: auto;
+}
+.right {
+	float: right;
+	margin-left: auto;
+}
+
+/* 
+________________________________________________________
+this is the blue header portion to include the navigation, the name/logo and the large centered text */
+#header {
+	width: 100%;
+	height: 500px;
+	background: #0099FF;
+	color: #ffffff;
+}
+#header a {
+	color: #ffffff;
+}
+#logo h1 {
+	margin-left: 15%;
+	padding-top: 7px;
+	color: #ffffff;
+}
+#large-text {
+    top: 150px;
+    left: 30%;
+    right: 30%;
+    width: auto;
+    height: 75px;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+#large-text h1 {
+    margin: auto;
+    line-height: 75px;
+    font-size: 75px;
+    vertical-align: middle;
+}
+
