@@ -31,9 +31,19 @@ nav li{
 
 /* 
 ________________________________________________________
+ some color settings */
+.blue {
+	color:#0099FF;
+}
+
+
+/* 
+________________________________________________________
  this wraps the whole website */
 #wrapper {
 	margin-top: 0;
+	margin-right: 15%;
+	margin-left: 15%;
 	background: #eeeeee;
 	width: auto;
 	height:100%;
@@ -41,19 +51,22 @@ ________________________________________________________
 
 /* 
 ________________________________________________________
-.left and .right are simply margin classes to keep the sites content centered at 70% */
+.left and .right are simply margin classes to keep the sites content centered at 70%.
+Right now I'm just using this for the navigation and site name/logo. This is a tentative 
+approach*/
 .left {
 	float: left;
 	margin-right: auto;
 }
 .right {
 	float: right;
-	margin-left: auto;
+ 	margin-left: auto;
 }
 
 /* 
 ________________________________________________________
-this is the blue header portion to include the navigation, the name/logo and the large centered text */
+this is the blue header portion to include the navigation, the name/logo and
+ the large centered text */
 #header {
 	width: 100%;
 	height: 500px;
@@ -64,8 +77,8 @@ this is the blue header portion to include the navigation, the name/logo and the
 	color: #ffffff;
 }
 #logo h1 {
-	margin-left: 15%;
 	padding-top: 7px;
+	margin-left: 15%;
 	color: #ffffff;
 }
 #large-text {
@@ -83,5 +96,49 @@ this is the blue header portion to include the navigation, the name/logo and the
     line-height: 75px;
     font-size: 75px;
     vertical-align: middle;
+}
+
+/* 
+________________________________________________________
+ this is the service section of the website */
+ #service {
+ 	background: #ffffff;
+ 	width: 100%;
+ 	height: 600px;
+ 	text-align: center;
+ 	padding-top: 15px;
+ 	padding-bottom: 75px;
+ }
+ #service h2 { /* Large welcome text in service area */
+ 	font-size: 300%;
+ 	margin-top: 90px;
+ 	padding-bottom: 60px;
+ }
+ #service h3 { /* Smaller title text for each icon-area */
+ 	font-size: 90%;
+ }
+ .icon {
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ }
+#icon1 { /* Left most icon */
+	display: inline-block;
+	max-width: 180px;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+#icon2 { /* Center icon */
+	display: inline-block;
+	max-width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#icon3 { /* Right most icon */
+	display: inline-block;
+	max-width: 180px;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
 }
 
