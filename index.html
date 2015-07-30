@@ -1,15 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>
       MD Template
     </title>
+    <link rel="stylesheet" href="css/default.css" />
   </head>
   <body>
     <div id="i_love_front">
       <div id="i_love_masthead">
-	<span>
+	<div id="md_template">
 	  MD Template
-	</span>
+	</div>
 	<div id="navigation">
 	  <a href="">Service</a>
 	  <a href="">Work</a>
@@ -19,7 +21,7 @@
 	</div>
       </div>
       <h1>
-	I Love
+	  I&#160;Love
       </h1>
     </div>
     <div id="why_i_love">
@@ -31,7 +33,7 @@
 	<a href="http://lipsum.com">magna aliqua</a>
 	<span>.</span>
       </div>
-      <div id="reason-blocks">
+      <div id="reason-blocks" class="three-by">
 	<div>
 	  <img src="img_link/lightning.png" alt="" />
 	  <h2>
@@ -70,15 +72,13 @@
 	</div>
       </div>      
     </div>
-    <div id="i_love_work">
+    <div id="i_love_work" class="three-by">
       <h1>
 	Work
       </h1>
       <div>
 	<img src="img_content/bison.jpg" alt="bison" />
-	<h2>
-	  Project Title
-	</h2>
+	<h2>Project Title</h2>
 	<a href="">PROJECT LINK</a>
       </div>
       <div>
@@ -118,8 +118,10 @@
       </div>
     </div>
     <div id="i_love_slideshow">
+      <!-- default image to load, other images get loaded using Ajax if JS is enabled -->
+      <img src="img_slider/dog.jpg" alt="" />
     </div>
-    <div id="i_love_team">
+    <div id="i_love_team" class="four-by">
       <h1>
 	Our Team
       </h1>
@@ -213,7 +215,9 @@
 	  </p>
 	  <p>
 	    <img src="img_link/pencil.png" alt="" />
-	    <input type="text" name="message" value="Message" />
+	    <textarea  name="message" cols="20" rows="5">
+	      Message
+	    </textarea>
 	  </p>
 	  <p>
 	    <!-- Make sure that the form does not actually submit -->
@@ -223,21 +227,23 @@
 	  </p>
 	</form>
       </div>
-      <div id="internal-links">
-	<h1>
-	  joashpereira.com
-	</h1>
-	<a href="">Home</a>
-	<a href="">Blog</a>
-      </div>
-      <div id="external-links">
-	<h1>
-	  Social
-	</h1>
-	<a href="http://www.behance.net"><img src="img_link/behance.png" alt="" /><span>Behance</span></a>
-	<a href="http://www.facebook.com"><img src="img_link/facebook2.png" alt="" /><span>Facebook</span></a>
-	<a href="http://github.com"><img src="img_link/github.png" alt="" /><span>Github</span></a>
-	<a href="http://www.linked.com"><img src="img_link/linkedin.png" alt="" /><span>LinkedIn</span></a>
+      <div id="links">
+	<div id="internal-links">
+	  <h1>
+	    joashpereira.com
+	  </h1>
+	  <a href="">Home</a>
+	  <a href="">Blog</a>
+	</div>
+	<div id="external-links">
+	  <h1>
+	    Social
+	  </h1>
+	  <a href="http://www.behance.net"><img src="img_link/behance.png" alt="" /><span>Behance</span></a>
+	  <a href="http://www.facebook.com"><img src="img_link/facebook2.png" alt="" /><span>Facebook</span></a>
+	  <a href="http://github.com"><img src="img_link/github.png" alt="" /><span>Github</span></a>
+	  <a href="http://www.linked.com"><img src="img_link/linkedin.png" alt="" /><span>LinkedIn</span></a>
+	</div>
       </div>
       <div id="made-by">
 	<span>Made by Joash Pereira. Thanks to materializecss</span>

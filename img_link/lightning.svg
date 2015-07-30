@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="181.48611"
-   height="584.5625"
+   width="93.14711"
+   height="300"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="lightning.svg"
-   inkscape:export-filename="/home/nived/devin/work/devtest/lightning.png"
+   inkscape:export-filename="/home/nived/devin/work/devtest/img_link/lightning.png"
    inkscape:export-xdpi="46.200001"
    inkscape:export-ydpi="46.200001">
   <defs
@@ -27,11 +27,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.89562255"
-     inkscape:cx="431.17994"
-     inkscape:cy="-133.10297"
+     inkscape:zoom="0.80213976"
+     inkscape:cx="-137.29868"
+     inkscape:cy="105.86232"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3030"
      showgrid="false"
      inkscape:window-width="1433"
      inkscape:window-height="2529"
@@ -63,25 +63,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-264.80086,-367.39049)">
+     transform="translate(-264.80086,-651.95299)">
     <g
        id="g3030">
       <path
-         inkscape:connector-curvature="0"
+         style="fill:#2196f3;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 264.80086,651.95299 0.11233,94.3494 0,0.36893 0.0324,26.73464 15.7973,0 0.22437,178.54703 76.98071,-205.28167 -51.43264,0 35.52342,-94.71833 -77.23722,0 z"
          id="rect2986"
-         d="m 264.80086,367.39049 0.21875,184.5625 81.0625,0 69.21875,-184.5625 -150.5,0 z"
-         style="fill:#0066ff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-      <path
-         style="fill:#0066ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         d="m 295.78697,551.95299 150.5,0 -150,400.00001 z"
-         id="path2989"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccc" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect2984"
-         d="m 265.01878,551.24883 0.0625,52.8125 61.1875,0 19.8125,-52.8125 -81.0625,0 z"
-         style="fill:#0066ff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>
