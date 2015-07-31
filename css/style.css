@@ -12,9 +12,11 @@ a, h1, h2, h3, h4, h5, h6, ul, li, p {
 body, a, h1 {
 	font-family: Helvetica Neue;
 	text-align: center;
-	width: auto;
 	margin: 0;
 	padding: 0;
+}
+body {
+
 }
 nav {
 	margin-right: 15%;
@@ -29,24 +31,19 @@ nav li{
 	padding-right: 7px;
 }
 
+
 /* 
 ________________________________________________________
  some color settings */
 .blue {
-	color:#0099FF;
+	color: #0099FF;
 }
 
-
-/* 
-________________________________________________________
- this wraps the whole website */
-#wrapper {
-	margin-top: 0;
-	margin-right: 15%;
-	margin-left: 15%;
-	background: #eeeeee;
-	width: auto;
-	height:100%;
+.blueTitle {
+	color: #0099FF;
+	text-align: left;
+	margin-left: 15px;
+	padding-bottom: 10px;
 }
 
 /* 
@@ -61,6 +58,15 @@ approach*/
 .right {
 	float: right;
  	margin-left: auto;
+}
+
+/* 
+________________________________________________________
+this class simply gives margins to all the main divs */
+.margins {
+ 	width: auto;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 /* 
@@ -103,8 +109,7 @@ ________________________________________________________
  this is the service section of the website */
  #service {
  	background: #ffffff;
- 	width: 100%;
- 	height: 600px;
+ 	height: 700px;
  	text-align: center;
  	padding-top: 15px;
  	padding-bottom: 75px;
@@ -120,25 +125,89 @@ ________________________________________________________
  .icon {
  	padding-left: 10px;
  	padding-right: 10px;
+
  }
 #icon1 { /* Left most icon */
 	display: inline-block;
-	max-width: 180px;
+	max-width: 30%;
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
 }
 #icon2 { /* Center icon */
 	display: inline-block;
-	max-width: 180px;
+	max-width: 30%;
 	margin-left: auto;
 	margin-right: auto;
 }
 #icon3 { /* Right most icon */
 	display: inline-block;
-	max-width: 180px;
+	max-width: 30%;
 	float: right;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* 
+________________________________________________________
+ this is the work section of the website */
+ #work {
+ 	background: #eeeeee;
+ 	width: auto;
+ 	height: 700px;
+ 	text-align: center;
+ 	padding-top: 65px;
+ 	padding-bottom: 15px;
+ }
+ .work-divs {
+ 	display: inline-block;
+ 	width: 30%;
+ 	max-width: 194px;
+ 	overflow: hidden;
+ 	height: 300px;
+ 	background: #ffffff;
+ 	margin: 5px;
+ 	box-shadow: 0px 2px 3px #888888;
+ 	text-align: left;
+ }
+ .work-divs img {
+ 	max-width: 194px;
+ 	max-height: 194px;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .work-divs a {
+ 	padding-left: 12px;
+ 	font-size: 80%;
+ }
+ .bullets-image-div {
+ 	padding-left: 12px;
+ 	padding-right: 12px;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ }
+ .bullets-image-div h3{
+ 	display: inline;
+ 	float: left;
+ 	padding-left: 20px;
+ }
+ .bullets-image-div img {
+ 	display: inline;
+ 	float: right;
+ 	padding-right: 0;
+ 	padding-top: 4px;
+ }
+ .bullets-image {
+ 	width: 4px;
+ 	height: 10px;
+ 	float: right;
+ }
+ #work-div1 {
+
+ }
+ #work-div2 {
+
+ }
+ #work-div3 {
+
+ }
