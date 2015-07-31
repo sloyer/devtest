@@ -14,6 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" media="screen and (max-width: 900px)" href="css/style-mobile.css">
 
+		<!-- Here is where the javascript will to run the slideshow below. -->
+
 	</head>
 	<body>
 
@@ -49,12 +51,11 @@
 <!-- description with 3 icons -->
 		<!-- link anchor for navigation-->
 		<a name="service"></a>
-
 		<div id="service" class="margins">
 
 			<!-- description -->
 			<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="blue">Phasellus</span> vestibulum lorem risus, nec suscipit lorem <span class="blue">laoreet quis</span>.</h2>
-			
+
 			<!-- icon 1 Left -->
 			<div id="icon1" class="icon">
 
@@ -88,9 +89,9 @@
 
 		</div><!-- end service area and descriptin with 3 icons -->
 
-		<!-- work tiles -->
+	<!-- work tiles -->
+		<!-- anchor for navigation -->
 		<a name="work"></a>
-
 		<div id="work" class="margins">
 			<!-- title -->
 			<h1 class="blueTitle"><b>Work</b></h1>
@@ -195,10 +196,16 @@
 
 		<!-- javascript image slider -->
 		<a name="js-slider"></a>
+			<!-- container for slider -->
+			<div class="sliderContainer">
+				<!-- placing the javascript slideshow -->
+				<a href="javascript:gotoshow()">
+					<img src="images/js slider/js-slide-tron.png" name="slide">
+				</a>
+				<!-- calling the javascript slideshow -->
+				<script type="text/javascript" src="script.js"></script>
 
-		<div id="js-slider">
-
-		</div><!-- end javascript image slider -->
+			</div><!-- end javascript image slider -->
 
 		<!-- our team -->
 		<a name="team"></a>
