@@ -1,6 +1,156 @@
+/* definitions */
 body, h1, a {
+	display: block;
 	font: "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
-	background: #ffffff;
-	color: #888888;
 	text-align: center;
+}
+
+hr {
+	display: none;
+}
+.margins {
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blueTitle {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* service area */
+#service {
+	height: auto;
+}
+
+#icon1 {
+	margin: auto;
+	clear: both;
+	float: none;
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+#icon2 {
+	margin: auto;
+	clear: both;
+	float: none;
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+#icon3 {
+	margin: auto;
+	clear: both;
+	float: none;
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+
+/* work area */
+.work-divs {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	height: auto;
+	width: auto;
+	padding: 15px;
+}
+#work {
+	height: auto;
+}
+
+#team {
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#icon4 {
+	display: block;
+	width: 100%;
+	text-align: cener; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* footer area */
+#footer {
+	display: block;
+	width: 100%;
+	height: auto;
+	background: #0099ff;
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 520px;
+	text-align: left;
+	color: #ffffff;
+}
+#footer a {
+	color: #ffffff;
+	text-align: left;
+}
+#footer p {
+	color: #ffffff;
+	text-align: left;
+}
+#left-div-left {
+	display: block;
+	height: auto;
+	width: 230px;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#left-div-right {
+	display: block;
+	height: auto;
+	width: 230px;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#right-div-left {
+	display: block;
+	height: auto;
+	width: 230px;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#right-div-left ul {
+	margin-left: -38px;
+}
+#right-div-right {
+	display: block;
+	height: auto;
+	width: 230px;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#right-div-right img {
+	text-align: left;
+	margin-bottom: -6px;
+}
+.iconC {
+	text-align: left;
 }
