@@ -30,6 +30,10 @@ nav li{
 	padding-left: 7px;
 	padding-right: 7px;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 
 /* 
@@ -130,22 +134,22 @@ ________________________________________________________
 #icon1 { /* Left most icon */
 	display: inline-block;
 	max-width: 30%;
+	width: auto;
 	float: left;
-	margin-left: auto;
-	margin-right: auto;
+
 }
 #icon2 { /* Center icon */
 	display: inline-block;
 	max-width: 30%;
-	margin-left: auto;
-	margin-right: auto;
+	width: auto;
+	float: left;
 }
 #icon3 { /* Right most icon */
 	display: inline-block;
 	max-width: 30%;
-	float: right;
-	margin-left: auto;
-	margin-right: auto;
+	width: auto;
+	float: left;
+
 }
 
 /* 
@@ -271,73 +275,66 @@ ________________________________________________________
  /* 
 ________________________________________________________
  this is the footer section of the website */
-footer {
-	padding-top: 40px;
-	background: #0099FF;
-	max-height:225px;
-	height: 100$;
-	width: 100%;
-	padding-bottom: 40px;
-}
-#icon6 {
-	width: 100%;
-	padding-top: 30px;
-}
-/* using iconC to organize cells */
-.iconC {
+
+#footer {
 	display: inline-block;
- 	width: 20%;
- 	margin-left:1%;
- 	margin-right:1%;
- 	max-width: 134px;
- 	overflow: hidden;
- 	height: 140px;
- 	text-align: left;
-}
-/* using icon6 to organize cells */
-#icon6 p {
-	display: inline;
-	width: 55%;
-	text-align: center;
-	padding-left: 20px;
+	width: 100%;
+	height: auto;
+	background: #0099ff;
+	padding-top: 50px;
+	margin:none;
+	min-height: 250px;
+	text-align: left;
 	color: #ffffff;
 }
-#footer h3 {
-	margin-top: -1px;
+footer p img h3 {
+	text-align: left;
 	color: #ffffff;
 }
-#footer p {
-	margin-left: -18px;
+footer a {
 	color: #ffffff;
 }
-#footer a {
-	color: #ffffff;
+#left-div-left {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
 }
-#icon6 img {
+#left-div-right {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
+}
+#right-div-left {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
+}
+#right-div-left ul {
+	margin-left: -38px;
+}
+#right-div-right {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
+}
+#right-div-right img {
+	text-align: left;
 	margin-bottom: -6px;
 }
-#first-two {
-	display: inline-block;
+.iconC {
+	text-align: left;
 }
-
-/* surrounds the first icon div */
-#first-two img {
-	width: 20px;
-	height: 20px;
-}
-
-/* long hr below message and email id */
-#footer-hr {
-	width: 233%;
-	margin-top: -60px;
-}
-
-/* button in footer */
-#footer-button {
-	background: #ff0000;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: -100px;
+#outter-div hr{
 }
