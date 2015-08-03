@@ -1,0 +1,33 @@
+<!-- pretent data base -->
+<!-- assume that image data is kept in an XML data base -->
+<animals>
+  <animal name="dog">
+    <portrait width="298" height="298" path="img_content/dog.jpg" />
+    <slider width="1080" height="400" path="img_slider/dog.jpg" />
+  </animal>
+  <animal name="bison">
+    <portrait width="298" height="298" path="img_content/bison.jpg" />
+    <slider width="1080" height="400" path="img_slider/bison.jpg" />
+  </animal>
+  <animal name="eagle">
+    <portrait width="298" height="298" path="img_content/eagle.jpg" />
+    <slider width="1080" height="400" path="img_slider/eagle.jpg" />
+  </animal>
+  <animal name="lynx">
+    <portrait width="298" height="298" path="img_content/lynx.jpg" />
+    <slider width="1080" height="400" path="img_slider/lynx.jpg" />
+  </animal>
+  <animal name="musk_ox">
+    <portrait width="298" height="298" path="img_content/musk-ox.jpg" />
+    <slider width="1080" height="400" path="img_slider/musk-ox.jpg" />
+  </animal>
+  <animal name="porcupine">
+    <portrait width="298" height="298" path="img_content/porcupine.jpg" />
+    <slider width="1080" height="400" path="img_slider/porcupine.jpg" />
+  </animal>
+  <animal name="beaver">
+    <portrait width="298" height="298" path="img_content/beaver.jpg" />
+    <slider width="1080" height="400" path="img_slider/beaver.jpg" />
+  </animal>
+</animals>
+

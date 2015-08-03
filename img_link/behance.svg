@@ -9,34 +9,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="50"
-   height="50"
+   width="16"
+   height="16"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="behance.svg"
    inkscape:export-filename="/home/nived/devin/work/devtest/img_link/behance.png"
-   inkscape:export-xdpi="46.200001"
-   inkscape:export-ydpi="46.200001">
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#141414"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.5475805"
-     inkscape:cx="30.615084"
-     inkscape:cy="18.438008"
+     inkscape:zoom="20.606224"
+     inkscape:cx="30.712146"
+     inkscape:cy="18.438"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2985"
      showgrid="false"
      inkscape:window-width="1312"
      inkscape:window-height="1529"
-     inkscape:window-x="40"
-     inkscape:window-y="72"
+     inkscape:window-x="103"
+     inkscape:window-y="213"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -58,27 +58,31 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-159.22255,-585.64716)">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="rect2982"
-       width="50"
-       height="50"
-       x="159.22255"
-       y="585.64716"
-       rx="10"
-       ry="10" />
-    <text
-       xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#0066ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-       x="183.86317"
-       y="622.08466"
-       id="text2984"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2986"
-         x="183.86317"
+     transform="translate(-159.22255,-619.64716)">
+    <g
+       id="g2985"
+       transform="matrix(0.32,0,0,0.32,108.27133,432.24007)">
+      <rect
+         ry="4"
+         rx="4"
+         y="585.64716"
+         x="159.22255"
+         height="50"
+         width="50"
+         id="rect2982"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2984"
          y="622.08466"
-         style="font-size:32px;fill:#0066ff;fill-opacity:1">Be</tspan></text>
+         x="183.86317"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#0066ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         xml:space="preserve"><tspan
+           style="font-size:32px;fill:#0066ff;fill-opacity:1"
+           y="622.08466"
+           x="183.86317"
+           id="tspan2986"
+           sodipodi:role="line">Be</tspan></text>
+    </g>
   </g>
 </svg>

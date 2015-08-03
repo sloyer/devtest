@@ -2,6 +2,7 @@
 * {
     font-family: sans-serif;
     font-weight: 100;
+    opacity: 1;
     /* remove gaps between sections causes by header elements, without
 messing up the centered "I Love" */
     margin-top: 0px;
@@ -21,23 +22,25 @@ body {
 
 a {
     text-decoration: none;
+    opacity: 1;
 }
 
+/* this style of column formatting has the advantage of not requiring
+extra html markup, as opposed to using CSS tables */
 /* 3-column formatting */
 div.three-by {
     width: 100%;
 }
 
-div.three-by div {
+div.three-by > div {
     width: 32%;
     display: inline-block;
-    text-align: center;
     padding: 0;
     margin: 0;
     border-width: 0;
 }
 
-div.three-by div:first-child {
+div.three-by > div:first-child {
     left: 0px;
 }
 
@@ -54,28 +57,27 @@ div.four-by {
     width: 100%;
 }
 
-div.four-by div {
+div.four-by > div {
     width: 24%;
     display: inline-block;
-    text-align: center;
     padding: 0;
     margin: 0;
     border-width: 0;
 }
 
-div.four-by div:first-child {
+div.four-by > div:first-child {
     left: 0px;
 }
 
-div.four-by div:nth-child(2) {
+div.four-by > div:nth-child(2) {
     left: 24%;
 }
 
-div.four-by div:nth-child(3) {
+div.four-by > div:nth-child(3) {
     right: 24%;
 }
 
-div.four-by div:last-child {
+div.four-by > div:last-child {
     right: 0px;
 }
 
@@ -92,6 +94,10 @@ div#i_love_front a, div#i_love_footer a {
 div#why_i_love {
     background-color: white;
     color: grey;
+}
+
+div#i_love_work > div {
+    text-align: center;
 }
 
 div#i_love_work, div#i_love_team {
@@ -148,7 +154,7 @@ div#navigation {
     float: right;
     display: block;
 }
-		  
+
 
 div#navigation a {
     text-align: center;
@@ -156,11 +162,11 @@ div#navigation a {
     margin-right: 10px;
 }
 
-div#navigation a:first-child {
+div#navigation a:first-of-type {
     margin-left: 0;
 }
 
-div#navigation a:last-child {
+div#navigation a:last-of-type {
     margin-right: 0;
 }
 
@@ -171,7 +177,7 @@ div#why_i_love {
     white-space: nowrap;
 }
 
-div#why_i_love div {
+div#why_i_love > div {
     padding-top: 20px;
     padding-bottom: 20px;
     white-space: normal;
@@ -185,16 +191,20 @@ div#why_i_love div.text {
     font-size: 250%;
 }
 
-div#reason-blocks div:first-child {
+div#reason-blocks > div {
+    text-align: center;
+}
+
+div#reason-blocks > div:first-of-type {
     margin-right: 5px;
 }
 
-div#reason-blocks div:nth-child(2) {
+div#reason-blocks > div:nth-of-type(2) {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-div#reason-blocks div:last-child {
+div#reason-blocks > div:last-of-type {
     margin-left: 5px;
 }
 
@@ -202,7 +212,7 @@ div#reason-blocks div:last-child {
 div#i_love_work {
 }
 
-div#i_love_work div {
+div#i_love_work > div {
     padding: 0px 0px 20px 0px;
     margin: 5px;
     background-color: white;
@@ -211,40 +221,42 @@ div#i_love_work div {
     text-align: left;
 }
 
-div#i_love_work div * {
+/* img, h2, and a elements */
+div#i_love_work div > * {
     padding: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-div#i_love_work div:first-child {
+div#i_love_work > div:first-of-type {
     margin-right: 5px;
 }
 
-div#i_love_work div:nth-child(2) {
+div#i_love_work > div:nth-of-type(2) {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-div#i_love_work div:last-child {
+div#i_love_work > div:last-of-type {
     margin-left: 5px;
 }
 
-div#i_love_work div a {
+div#i_love_work > div a {
     font-weight: 400;
     padding: 5px 5px 10px 5px;
-    margin: 5px;
+    margin: 5px 0px 5px 10px;
 }
 
-div#i_love_work div h2 {
+div#i_love_work > div h2 {
     padding: 10px 5px 5px 5px;
-    margin: 5px;
+    margin: 5px 0px 5px 10px;
 }
-		     
+
 
 /* i_love_slideshow section formatting */
 div#i_love_slideshow {
     height: 400px;
+    overflow: hidden;
 }
 
 /* i_love_team section formatting */
@@ -253,32 +265,33 @@ div#i_love_team {
     white-space: nowrap;
 }
 
-div#i_love_team div {
+div#i_love_team > div {
     background-color: white;
     box-shadow: 0px 1px 5px #888888, 0px -1px 5px #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
-div#i_love_team div h3 {
+div#i_love_team > div h3 {
     color: red;
 }
 
-div#i_love_team div:first-child {
+div#i_love_team > div:first-of-type {
     margin-right: 5px;
 }
 
-div#i_love_team div:nth-child(2) {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-div#i_love_team div:nth-child(3) {
+div#i_love_team > div:nth-of-type(2) {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-div#i_love_team div:last-child {
+div#i_love_team > div:nth-of-type(3) {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+div#i_love_team > div:last-of-type {
     margin-left: 5px;
 }
 
@@ -303,6 +316,9 @@ div#links {
 
 div#made-by {
     clear: both;
+    padding-top: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 div#contact-us, div#links, div#made-by {
@@ -321,12 +337,65 @@ div#contact-us input, div#contact-us textarea {
     border-bottom: 1px solid #a9a9a9;
 }
 
+div#contact-us form p {
+    margin: 10px 0px;
+    padding: 0;
+    width: 100%;
+}
+
 div#contact-us form p:first-child, div#contact-us form p:nth-child(2) {
-				       display: inline;
+				       display: inline-block;
 				       width: 45%;
+				       white-space: nowrap;
 				   }
+div#contact-us form p:first-child {
+    float: left;
+}
+
+div#contact-us form p:nth-child(2) {
+    float: right;
+}
+
+div#contact-us form p:nth-child(3) {
+    clear: both;
+    display: inline;
+    white-space: nowrap;
+}
+
+div#contact-us form p:nth-child(3) img {
+    vertical-align: top;
+}
+
+div#contact-us textarea {
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* from: https://css-tricks.com/snippets/css/style-placeholder-text/ */
+::-webkit-input-placeholder {
+    color: white;
+    opacity: 1;			/*global setting does not reach this element for some reason*/
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+    opacity: 1;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: white;
+    opacity: 1;
+}
 
 div#contact-us button {
+    position: relative;
+    float: right;
     right: 0px;
     margin-right: 0px;
     color: white;
@@ -353,6 +422,7 @@ div#internal-links, div#external-links {
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    padding-right: 20px;
 }
 
 div#internal-links h1, div#internal-links a, div#external-links h1, div#external-links a {
@@ -362,6 +432,15 @@ div#internal-links h1, div#internal-links a, div#external-links h1, div#external
 div#internal-links h1, div#external-links h1 {
     font-size: 100%;
     font-weight: 700;
+    height: 2em;
+}
+
+div#internal-links a, div#external-links a {
+    height: 1.3em;
+}
+
+div#external-links img {
+    padding-right: 3px;
 }
 
 /* other settings */
