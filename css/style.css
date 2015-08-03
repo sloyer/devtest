@@ -1,0 +1,354 @@
+/* definitions */
+ul, li, a {
+	list-style-type: none;
+	text-decoration: none;
+}
+a, h1, h2, h3, h4, h5, h6, ul, li, p {
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+}
+body, a, h1 {
+	font-family: Helvetica Neue;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+body {
+
+}
+nav {
+	margin-right: 15%;
+}
+nav ul li{
+	display: inline-block;
+	width: auto;
+}
+nav li{
+	width: auto;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* 
+________________________________________________________
+ some color settings */
+.blue {
+	color: #0099FF;
+}
+
+.blueTitle {
+	color: #0099FF;
+	text-align: left;
+	margin-left: 15px;
+	padding-bottom: 10px;
+}
+
+/* 
+________________________________________________________
+.left and .right are simply margin classes to keep the sites content centered at 70%.
+Right now I'm just using this for the navigation and site name/logo. This is a tentative 
+approach*/
+.left {
+	float: left;
+	margin-right: auto;
+}
+.right {
+	float: right;
+ 	margin-left: auto;
+}
+
+/* 
+________________________________________________________
+this class simply gives margins to all the main divs */
+.margins {
+ 	width: auto;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+/* 
+________________________________________________________
+this is the blue header portion to include the navigation, the name/logo and
+ the large centered text */
+#header {
+	width: 100%;
+	height: 500px;
+	background: #0099FF;
+	color: #ffffff;
+}
+#header a {
+	color: #ffffff;
+}
+#logo h1 {
+	padding-top: 7px;
+	margin-left: 15%;
+	color: #ffffff;
+}
+#large-text {
+    top: 150px;
+    left: 30%;
+    right: 30%;
+    width: auto;
+    height: 75px;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+#large-text h1 {
+    margin: auto;
+    line-height: 75px;
+    font-size: 75px;
+    vertical-align: middle;
+}
+
+/* 
+________________________________________________________
+ this is the service section of the website */
+ #service {
+ 	background: #ffffff;
+ 	height: 700px;
+ 	text-align: center;
+ 	padding-top: 15px;
+ 	padding-bottom: 75px;
+ }
+ #service h2 { /* Large welcome text in service area */
+ 	font-size: 300%;
+ 	margin-top: 90px;
+ 	padding-bottom: 60px;
+ }
+ #service h3 { /* Smaller title text for each icon-area */
+ 	font-size: 90%;
+ }
+ .icon {
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+
+ }
+#icon1 { /* Left most icon */
+	display: inline-block;
+	max-width: 30%;
+	width: auto;
+	float: left;
+
+}
+#icon2 { /* Center icon */
+	display: inline-block;
+	max-width: 30%;
+	width: auto;
+	float: left;
+}
+#icon3 { /* Right most icon */
+	display: inline-block;
+	max-width: 30%;
+	width: auto;
+	float: left;
+
+}
+
+/* 
+________________________________________________________
+ this is the work section of the website */
+ #work {
+ 	background: #eeeeee;
+ 	width: auto;
+ 	height: 700px;
+ 	text-align: center;
+ 	padding-top: 65px;
+ 	padding-bottom: 15px;
+ }
+ .work-divs {
+ 	display: inline-block;
+ 	width: 30%;
+ 	max-width: 194px;
+ 	overflow: hidden;
+ 	height: 300px;
+ 	background: #ffffff;
+ 	margin: 5px;
+ 	box-shadow: 0px 2px 3px #888888;
+ 	text-align: left;
+ }
+ .work-divs img {
+ 	max-width: 194px;
+ 	max-height: 194px;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .work-divs a {
+ 	padding-left: 12px;
+ 	font-size: 80%;
+ }
+ .bullets-image-div {
+ 	padding-left: 12px;
+ 	padding-right: 12px;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ }
+ .bullets-image-div h3{
+ 	display: inline;
+ 	float: left;
+ 	padding-left: 20px;
+ }
+ .bullets-image-div img {
+ 	display: inline;
+ 	float: right;
+ 	padding-right: 0;
+ }
+ .bullets-image {
+ 	width: 4px;
+ 	height: 10px;
+ 	float: right;
+ }
+
+ /* 
+________________________________________________________
+ this is the javascript section for the image slider */
+ .sliderContainer {
+ 	width: 100%;
+ 	height: 260px;
+ 	min-height: 200px;
+ 	position: relative;
+ 	overflow: hidden;
+ }
+ .sliderContainer img {
+ 	width: 100%;
+ 	min-height: 280px;
+ }
+
+ /* 
+________________________________________________________
+ this is the Our Team section of the website */
+ #team {
+ 	background: #e9e9e9;
+ 	width: auto;
+ 	height: 320px;
+ 	text-align: center;
+ 	padding-top: 65px;
+ 	padding-bottom: 15px;
+ }
+ #team h5 {
+ 	padding-left: 7px;
+ 	padding-right: 7px;
+ 	text-align: center;
+ }
+ #icon4 {
+ 	background: #ffffff;
+ }
+ #icon5 {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	text-align:center;
+ }
+ #icon5 img {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	text-align: center;
+ }
+.iconB {
+ 	display: inline-block;
+ 	width: 22%;
+ 	max-width: 134px;
+ 	overflow: hidden;
+ 	height: 250px;
+ 	background: #ffffff;
+ 	margin: 5px;
+ 	box-shadow: 0px 2px 3px #888888;
+ 	text-align: left;
+}
+.social {
+	display: inline;
+	text-align: center;
+	padding-left: 10px;
+}
+.social img{
+	display: inline;
+	width: 25px;
+	height: 25px;
+}
+
+ /* 
+________________________________________________________
+ this is the footer section of the website */
+
+#footer {
+	display: inline-block;
+	width: auto;
+	min-width: 70%;
+	height: auto;
+	background: #0099ff;
+	padding-top: 50px;
+	margin: 0;
+	min-height: 300px;
+	text-align: left;
+	color: #ffffff;
+}
+footer p img h3 {
+	text-align: left;
+	color: #ffffff;
+}
+footer a {
+	color: #ffffff;
+}
+#left-div-left {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
+}
+#left-div-right {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
+}
+#right-div-left {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
+}
+#right-div-left ul {
+	margin-left: -38px;
+	width: auto;
+}
+#right-div-right {
+	height: auto;
+	width: auto;
+	float: left;
+	padding-left: 4%;
+	padding-right: 4%;
+	margin: none;
+}
+#right-div-right img {
+	text-align: left;
+	margin-bottom: -6px;
+}
+.iconC {
+	text-align: left;
+}
+.footer-button a {
+	display: block;
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+	left: 0;
+	bottom: 0;
+	background: red;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
