@@ -1,16 +1,48 @@
 $blue:  #2196f3;
 $default-bg: #f7f7f7;
 
-#menu {
-    background-color: $blue;
-    color: white;
+@mixin display-flex {
+    display: -webkit-flex;
+    display: flex;
 }
 
-#header {
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    justify-content: $justify;
+}
+
+
+body {
+    text-align: center;
+    font-family: calibri, sans-serif;
+    font-weight: lighter;
+}
+
+.header {
     background-color: $blue;
     color: white;
+    @include display-flex;
+}
+
+.menu-label {
+    font-size: 150%;
+}
+
+.menu-item {
+    font-size: 80%;
+    font-weight: normal;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+}
+
+.header-text {
     font-size: 400%;
-    text-align: center;
     padding-top: 2em;
     padding-bottom: 4em;
 }

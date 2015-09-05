@@ -1,12 +1,29 @@
-#menu {
-  background-color: #2196f3;
-  color: white; }
+body {
+  text-align: center;
+  font-family: calibri, sans-serif;
+  font-weight: lighter; }
 
-#header {
+.header {
   background-color: #2196f3;
   color: white;
+  display: -webkit-flex;
+  display: flex; }
+
+.menu-label {
+  font-size: 150%; }
+
+.menu-item {
+  font-size: 80%;
+  font-weight: normal;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.header-text {
   font-size: 400%;
-  text-align: center;
   padding-top: 2em;
   padding-bottom: 4em; }
 
