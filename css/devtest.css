@@ -3,14 +3,17 @@ body {
   font-family: calibri, sans-serif;
   font-weight: lighter; }
 
-.header {
-  background-color: #2196f3;
-  color: white;
+.layout-center-aligned {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-align-items: center;
   align-items: center; }
+
+.header {
+  background-color: #2196f3;
+  color: white; }
 
 .page-name {
   font-size: 150%; }
@@ -26,5 +29,14 @@ body {
   font-size: 400%;
   padding-top: 2em;
   padding-bottom: 4em; }
+
+.quote {
+  font-size: 225%;
+  color: gray;
+  margin-top: 2em; }
+
+span.emphasis {
+  font-weight: normal;
+  color: #2196f3; }
 
 /*# sourceMappingURL=devtest.css.map */

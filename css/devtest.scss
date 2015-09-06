@@ -23,12 +23,15 @@ body {
     font-weight: lighter;
 }
 
+.layout-center-aligned {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include align-items(center);
+}
+
 .header {
     background-color: $blue;
     color: white;
-    @include display-flex;
-    @include flex-wrap(wrap);
-    align-items: center;
 }
 
 .page-name {
@@ -48,4 +51,14 @@ body {
     font-size: 400%;
     padding-top: 2em;
     padding-bottom: 4em;
+}
+
+.quote {
+    font-size: 225%;
+    color: gray;
+    margin-top: 2em;
+}
+
+span.emphasis {
+    color: $blue;
 }
