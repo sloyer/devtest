@@ -7,20 +7,20 @@ body {
   background-color: #2196f3;
   color: white;
   display: -webkit-flex;
-  display: flex; }
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center; }
 
-.menu-label {
+.page-name {
   font-size: 150%; }
 
-.menu-item {
+.menu {
   font-size: 80%;
-  font-weight: normal;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  justify-content: center; }
+  font-weight: normal; }
+
+.menu-item {
+  margin-right: 5%; }
 
 .header-text {
   font-size: 400%;
