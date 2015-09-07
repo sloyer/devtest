@@ -1,5 +1,6 @@
 $blue:  #2196f3;
 $off-white: #f7f7f7;
+$shadow: #aaaaaa;
 
 @mixin display-flex {
     display: -webkit-flex;
@@ -92,8 +93,14 @@ h1 {
 .work-panel {
     margin-top:    5px;
     margin-bottom: 5px;
-    border: solid;
     background-color: white;
+    box-shadow: 0 1px 3px $shadow;
+    border-radius: 3px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
 }
 
 .emphasis {
