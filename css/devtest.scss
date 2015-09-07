@@ -93,13 +93,28 @@ h1 {
 .work-panel {
     margin-top:    5px;
     margin-bottom: 5px;
+    padding-bottom: 25px;
     background-color: white;
     box-shadow: 0 1px 3px $shadow;
     border-radius: 3px;
     overflow: hidden;
+    text-align: left;
 
     img {
         width: 100%;
+    }
+    
+    p {
+        padding-left: 5%;
+        margin-bottom: .5em;
+        font-size: 125%;
+        color: gray;
+        font-weight: normal;
+    }
+    
+    a {
+        padding-left: 5%;
+        font-size: 60%;
     }
 }
 

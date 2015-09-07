@@ -60,12 +60,23 @@ h1 {
 .work-panel {
   margin-top: 5px;
   margin-bottom: 5px;
+  padding-bottom: 25px;
   background-color: white;
   box-shadow: 0 1px 3px #aaaaaa;
   border-radius: 3px;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: left; }
   .work-panel img {
     width: 100%; }
+  .work-panel p {
+    padding-left: 5%;
+    margin-bottom: .5em;
+    font-size: 125%;
+    color: gray;
+    font-weight: normal; }
+  .work-panel a {
+    padding-left: 5%;
+    font-size: 60%; }
 
 .emphasis {
   color: #2196f3;
