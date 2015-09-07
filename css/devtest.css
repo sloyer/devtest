@@ -3,6 +3,12 @@ body {
   font-family: calibri, sans-serif;
   font-weight: lighter; }
 
+h1 {
+  font-size: 230%;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 10px; }
+
 .layout-center-aligned {
   display: -webkit-flex;
   display: flex;
@@ -27,16 +33,38 @@ body {
 
 .header-text {
   font-size: 400%;
-  padding-top: 2em;
-  padding-bottom: 4em; }
+  padding-top: 13%;
+  padding-bottom: 24%; }
 
 .quote {
   font-size: 225%;
   color: gray;
-  margin-top: 2em; }
+  margin-top: 80px; }
 
-span.emphasis {
-  font-weight: normal;
-  color: #2196f3; }
+.services {
+  margin-bottom: 40px; }
+  .services p {
+    font-size: 75%; }
+
+.icon {
+  width: 64pt;
+  margin-top: 40px; }
+  .icon path {
+    fill: #2196f3; }
+
+.work {
+  background-color: #f7f7f7;
+  padding-top: 55px;
+  padding-bottom: 30px; }
+
+.work-panel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid;
+  background-color: white; }
+
+.emphasis {
+  color: #2196f3;
+  font-weight: normal; }
 
 /*# sourceMappingURL=devtest.css.map */

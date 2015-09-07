@@ -1,5 +1,5 @@
 $blue:  #2196f3;
-$default-bg: #f7f7f7;
+$off-white: #f7f7f7;
 
 @mixin display-flex {
     display: -webkit-flex;
@@ -21,6 +21,13 @@ body {
     text-align: center;
     font-family: calibri, sans-serif;
     font-weight: lighter;
+}
+
+h1 {
+    font-size: 230%;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .layout-center-aligned {
@@ -49,16 +56,47 @@ body {
 
 .header-text {
     font-size: 400%;
-    padding-top: 2em;
-    padding-bottom: 4em;
+    padding-top: 13%;
+    padding-bottom: 24%;
 }
 
 .quote {
     font-size: 225%;
     color: gray;
-    margin-top: 2em;
+    margin-top: 80px;
 }
 
-span.emphasis {
+.services {
+    margin-bottom: 40px;
+
+    p {
+        font-size: 75%;
+    }
+}
+
+.icon {
+    width: 64pt;
+    margin-top: 40px;
+
+    path {
+        fill: $blue;
+    }
+}
+
+.work {
+    background-color: $off-white;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+.work-panel {
+    margin-top:    5px;
+    margin-bottom: 5px;
+    border: solid;
+    background-color: white;
+}
+
+.emphasis {
     color: $blue;
+    font-weight: normal;
 }
