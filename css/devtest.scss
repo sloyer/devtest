@@ -118,6 +118,20 @@ h1 {
     }
 }
 
+#slide {
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* This will force the slide div to a fixed size.
+ * Size is dependent on width of element with a 1:1 aspect ratio. */
+#slide:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
 .emphasis {
     color: $blue;
     font-weight: normal;

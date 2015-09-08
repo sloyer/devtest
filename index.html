@@ -4,7 +4,7 @@
 
 <head>
     <title>
-  
+    MD Template
     </title>
 
     <link rel="stylesheet" href="css/foundation.min.css">
@@ -12,9 +12,10 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/devtest.js"></script>
 </head>
 
-<body>
+<body onload="startSlideShow()">
     <!-- Base container for web page content -->
     <div>
 
@@ -229,8 +230,10 @@
 
         <!-- Slideshow -->
         <div class="row">
-            <div class="column small-12 small-centered">
-            slideshow
+            <div class="column small-10 medium-4 small-centered">
+                <div id="slide">
+                <!-- Content placed here using javascript -->
+                </div>
             </div>
         </div>
 
