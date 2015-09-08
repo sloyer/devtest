@@ -19,10 +19,10 @@ h1 {
 .base {
   background-color: #f7f7f7;
   text-align: center;
-  font-family: calibri, sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: lighter; }
 
-.header {
+.header, .footer {
   background-color: #2196f3;
   color: white; }
 
@@ -42,17 +42,18 @@ h1 {
   padding-bottom: 24%; }
 
 .quote {
-  font-size: 225%;
+  font-size: 240%;
   color: gray; }
 
 .services {
   background-color: white; }
   .services p {
     font-size: 75%; }
+  .services .icon {
+    width: 64pt; }
 
 .icon {
-  width: 64pt;
-  margin-top: 40px; }
+  padding-top: 1em; }
   .icon path {
     fill: #2196f3; }
 
@@ -69,15 +70,22 @@ h1 {
   overflow: hidden; }
   .panel img {
     width: 100%; }
-  .panel p {
+  .panel .name {
     padding-left: 5%;
-    margin-bottom: .5em;
-    font-size: 125%;
+    padding-top: 20px;
+    font-size: 110%;
     color: gray;
     font-weight: normal; }
-  .panel a {
+  .panel .title {
+    color: #e53935;
+    font-size: 90%;
+    font-style: italic; }
+  .panel .link {
     padding-left: 5%;
+    padding-top: 20px;
     font-size: 60%; }
+  .panel .icon {
+    width: 12pt; }
 
 #slide {
   border-radius: 4px;

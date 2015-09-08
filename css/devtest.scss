@@ -1,6 +1,7 @@
 $blue:  #2196f3;
 $off-white: #f7f7f7;
 $shadow: #aaaaaa;
+$red:  #e53935;
 
 @mixin display-flex {
     display: -webkit-flex;
@@ -39,11 +40,11 @@ h1 {
 .base {
     background-color: $off-white;
     text-align: center;
-    font-family: calibri, sans-serif;
+    font-family: "open sans", sans-serif;
     font-weight: lighter;
 }
 
-.header {
+.header, .footer {
     background-color: $blue;
     color: white;
 }
@@ -68,7 +69,7 @@ h1 {
 }
 
 .quote {
-    font-size: 225%;
+    font-size: 240%;
     color: gray;
 }
 
@@ -78,11 +79,14 @@ h1 {
     p {
         font-size: 75%;
     }
+
+    .icon {
+        width: 64pt;
+    }
 }
 
 .icon {
-    width: 64pt;
-    margin-top: 40px;
+    padding-top: 1em;
 
     path {
         fill: $blue;
@@ -106,18 +110,29 @@ h1 {
         width: 100%;
     }
     
-    p {
+    .name {
         padding-left: 5%;
-        margin-bottom: .5em;
-        font-size: 125%;
+        padding-top: 20px;
+        font-size: 110%;
         color: gray;
         font-weight: normal;
     }
     
-    a {
+    .title {
+        color: $red;
+        font-size: 90%;
+        font-style: italic;
+    }
+    
+    .link {
         padding-left: 5%;
+        padding-top: 20px;
         font-size: 60%;
     }
+
+    .icon {
+        width: 12pt;
+    }    
 }
 
 #slide {
