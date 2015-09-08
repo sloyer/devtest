@@ -1,8 +1,3 @@
-body {
-  text-align: center;
-  font-family: calibri, sans-serif;
-  font-weight: lighter; }
-
 h1 {
   font-size: 230%;
   text-align: left;
@@ -16,6 +11,16 @@ h1 {
   flex-wrap: wrap;
   -webkit-align-items: center;
   align-items: center; }
+
+.layout-section-padding {
+  padding-top: 60px;
+  padding-bottom: 20px; }
+
+.base {
+  background-color: #f7f7f7;
+  text-align: center;
+  font-family: calibri, sans-serif;
+  font-weight: lighter; }
 
 .header {
   background-color: #2196f3;
@@ -38,11 +43,10 @@ h1 {
 
 .quote {
   font-size: 225%;
-  color: gray;
-  margin-top: 80px; }
+  color: gray; }
 
 .services {
-  margin-bottom: 40px; }
+  background-color: white; }
   .services p {
     font-size: 75%; }
 
@@ -53,35 +57,27 @@ h1 {
     fill: #2196f3; }
 
 .work {
-  background-color: #f7f7f7;
-  padding-top: 55px;
-  padding-bottom: 30px; }
+  text-align: left; }
 
-.work-panel {
+.panel {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-bottom: 25px;
   background-color: white;
   box-shadow: 0 1px 3px #aaaaaa;
   border-radius: 3px;
-  overflow: hidden;
-  text-align: left; }
-  .work-panel img {
+  overflow: hidden; }
+  .panel img {
     width: 100%; }
-  .work-panel p {
+  .panel p {
     padding-left: 5%;
     margin-bottom: .5em;
     font-size: 125%;
     color: gray;
     font-weight: normal; }
-  .work-panel a {
+  .panel a {
     padding-left: 5%;
     font-size: 60%; }
-
-.slideshow {
-  background-color: #f7f7f7;
-  padding-top: 10px;
-  padding-bottom: 10px; }
 
 #slide {
   border-radius: 4px;
