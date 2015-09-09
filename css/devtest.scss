@@ -44,9 +44,15 @@ h1 {
     font-weight: lighter;
 }
 
-.header, .footer {
+.header {
     background-color: $blue;
     color: white;
+}
+
+.footer {
+    @extend .header;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 .page-name {
@@ -147,6 +153,15 @@ h1 {
     content: "";
     display: block;
     padding-top: 100%;
+}
+
+.contact {
+    text-align: left;
+    font-size: 80%;
+
+    path {
+        fill: white;
+    }
 }
 
 .emphasis {

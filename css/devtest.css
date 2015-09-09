@@ -26,6 +26,10 @@ h1 {
   background-color: #2196f3;
   color: white; }
 
+.footer {
+  padding-top: 20px;
+  padding-bottom: 60px; }
+
 .page-name {
   font-size: 150%; }
 
@@ -98,6 +102,12 @@ h1 {
   content: "";
   display: block;
   padding-top: 100%; }
+
+.contact {
+  text-align: left;
+  font-size: 80%; }
+  .contact path {
+    fill: white; }
 
 .emphasis {
   color: #2196f3;
