@@ -19,30 +19,38 @@ $dark-red: #d52925;
     align-items: $alignment;
 }
 
-
-h1 {
-    font-size: 230%;
-    text-align: left;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
+/* Causes contents to be vertically aligned in the middle */
 .layout-center-aligned {
     @include display-flex;
     @include flex-wrap(wrap);
     @include align-items(center);
 }
 
+/* Standard padding between sections of the page */
 .layout-section-padding {
     padding-top: 60px;
     padding-bottom: 20px;
 }
 
+/* Footer is padded differently */
+.layout-footer-padding {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+/* Default values */
 .base {
     background-color: $off-white;
     text-align: center;
     font-family: "open sans", sans-serif;
     font-weight: lighter;
+}
+
+h1 {
+    font-size: 230%;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 a {
@@ -53,20 +61,23 @@ a:hover {
     font-weight: bold;
 }
 
+/* Allows the setting of SVG icon color when using a <use> reference.
+   Just set the color style attribute. */
+path {
+    fill: currentColor;
+}
+
+/* Styling for the page header */
 .header {
     background-color: $blue;
     color: white;
-}
-
-.layout-footer-padding {
-    padding-top: 20px;
-    padding-bottom: 60px;
 }
 
 .page-name {
     font-size: 150%;
 }
 
+/* menu and menu-item are for the menu at the top of the header */
 .menu {
     font-size: 80%;
     font-weight: normal;
@@ -74,7 +85,6 @@ a:hover {
 
 .menu-item {
     color: white;
-    margin-right: 5%;
 }
 
 .header-text {
@@ -82,7 +92,9 @@ a:hover {
     padding-top: 13%;
     padding-bottom: 24%;
 }
+/* End styling for page header */
 
+/* Styling for services section */
 .quote {
     font-size: 240%;
     color: gray;
@@ -99,19 +111,15 @@ a:hover {
         width: 64pt;
     }
 }
+/* End styling for services section */
 
+/* Styles icons for the Services section and panels */
 .icon {
     padding-top: 1em;
-
-    path {
-        fill: $blue;
-    }
+    color: $blue;
 }
 
-.work {
-    text-align: left;
-}
-
+/* Used for both work samples and team members */
 .panel {
     margin-top:    5px;
     margin-bottom: 5px;
@@ -126,7 +134,6 @@ a:hover {
     }
     
     .name {
-        padding-left: 5%;
         padding-top: 20px;
         font-size: 110%;
         color: gray;
@@ -140,7 +147,6 @@ a:hover {
     }
     
     .link {
-        padding-left: 5%;
         padding-top: 20px;
         font-size: 60%;
     }
@@ -150,6 +156,16 @@ a:hover {
     }    
 }
 
+/* styling specific to work samples */
+.work.panel {
+    text-align: left;
+    
+    .name, .link  {
+        padding-left: 5%;
+    }
+}
+
+/* Slide show styling */
 #slide {
     border-radius: 4px;
     position: relative;
@@ -158,6 +174,7 @@ a:hover {
 }
 
 /* This will force the slide div to a fixed size.
+ * Also places inset shadow on slide image.
  * Size is dependent on width of element with a 1:1 aspect ratio. */
 #slide:before {
     content: "";
@@ -170,39 +187,7 @@ a:hover {
     z-index: 2;
 }
 
-.contact {
-    text-align: left;
-    font-size: 80%;
-
-    .input {
-        width: 100%;
-        color: white;
-        background-color: #2196f3;
-        border: none;
-        border-bottom: thin solid gray;
-        margin-bottom: 20px;
-        padding-bottom: 5px;
-        resize: none;
-    }
-
-    .submit {
-        color: white;
-        font-size: 80%;
-        background-color: $red;
-        float: right;
-        width: 80px;
-        height: 25px;
-        margin-bottom: 20px;
-        border:none;
-        border-radius: 4px;
-        box-shadow: 0 1px 3px $shadow;
-    }
-    
-    .submit:hover {
-        background-color: $dark-red;
-    }
-}
-
+/* Footer styling */
 .footer {
     @extend .header;
     
@@ -217,10 +202,6 @@ a:hover {
     
     svg {
         width: 12pt;
-        
-        path {
-            fill: white;
-        }
     }
 
     a {
@@ -229,6 +210,44 @@ a:hover {
     }
 }
 
+/* This is for the contact section of the footer */
+.contact {
+    text-align: left;
+    font-size: 80%;
+
+    /* Input fields */
+    .input {
+        width: 100%;
+        color: white;
+        background-color: $blue;
+        border: none;
+        border-bottom: thin solid gray;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        resize: none;
+    }
+
+    /* Submit button */
+    .submit {
+        color: white;
+        font-size: 80%;
+        float: right;
+        margin-bottom: 20px;
+        background-color: $red;
+        width: 80px;
+        height: 25px;
+        border:none;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px $shadow;
+    }
+    
+    .submit:hover {
+        background-color: $dark-red;
+    }
+}
+/* End styling for page footer */
+
+/* For emphasizing text */
 .emphasis {
     color: $blue;
     font-weight: normal;

@@ -1,9 +1,4 @@
-h1 {
-  font-size: 230%;
-  text-align: left;
-  margin-top: 0px;
-  margin-bottom: 10px; }
-
+/* Causes contents to be vertically aligned in the middle */
 .layout-center-aligned {
   display: -webkit-flex;
   display: flex;
@@ -12,15 +7,28 @@ h1 {
   -webkit-align-items: center;
   align-items: center; }
 
+/* Standard padding between sections of the page */
 .layout-section-padding {
   padding-top: 60px;
   padding-bottom: 20px; }
 
+/* Footer is padded differently */
+.layout-footer-padding {
+  padding-top: 20px;
+  padding-bottom: 60px; }
+
+/* Default values */
 .base {
   background-color: #f7f7f7;
   text-align: center;
   font-family: "open sans", sans-serif;
   font-weight: lighter; }
+
+h1 {
+  font-size: 230%;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 10px; }
 
 a {
   text-decoration: none; }
@@ -28,30 +36,34 @@ a {
 a:hover {
   font-weight: bold; }
 
+/* Allows the setting of SVG icon color when using a <use> reference.
+   Just set the color style attribute. */
+path {
+  fill: currentColor; }
+
+/* Styling for the page header */
 .header, .footer {
   background-color: #2196f3;
   color: white; }
 
-.layout-footer-padding {
-  padding-top: 20px;
-  padding-bottom: 60px; }
-
 .page-name {
   font-size: 150%; }
 
+/* menu and menu-item are for the menu at the top of the header */
 .menu {
   font-size: 80%;
   font-weight: normal; }
 
 .menu-item {
-  color: white;
-  margin-right: 5%; }
+  color: white; }
 
 .header-text {
   font-size: 400%;
   padding-top: 13%;
   padding-bottom: 24%; }
 
+/* End styling for page header */
+/* Styling for services section */
 .quote {
   font-size: 240%;
   color: gray; }
@@ -63,14 +75,13 @@ a:hover {
   .services .icon {
     width: 64pt; }
 
+/* End styling for services section */
+/* Styles icons for the Services section and panels */
 .icon {
-  padding-top: 1em; }
-  .icon path {
-    fill: #2196f3; }
+  padding-top: 1em;
+  color: #2196f3; }
 
-.work {
-  text-align: left; }
-
+/* Used for both work samples and team members */
 .panel {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -82,7 +93,6 @@ a:hover {
   .panel img {
     width: 100%; }
   .panel .name {
-    padding-left: 5%;
     padding-top: 20px;
     font-size: 110%;
     color: gray;
@@ -92,12 +102,18 @@ a:hover {
     font-size: 90%;
     font-style: italic; }
   .panel .link {
-    padding-left: 5%;
     padding-top: 20px;
     font-size: 60%; }
   .panel .icon {
     width: 12pt; }
 
+/* styling specific to work samples */
+.work.panel {
+  text-align: left; }
+  .work.panel .name, .work.panel .link {
+    padding-left: 5%; }
+
+/* Slide show styling */
 #slide {
   border-radius: 4px;
   position: relative;
@@ -105,6 +121,7 @@ a:hover {
   z-index: 1; }
 
 /* This will force the slide div to a fixed size.
+ * Also places inset shadow on slide image.
  * Size is dependent on width of element with a 1:1 aspect ratio. */
 #slide:before {
   content: "";
@@ -116,9 +133,26 @@ a:hover {
   float: left;
   z-index: 2; }
 
+/* Footer styling */
+.footer {
+  position: relative;
+  text-align: left;
+  font-weight: normal;
+  font-size: 110%; }
+  .footer .layout-higher {
+    top: -.5em; }
+  .footer svg {
+    width: 12pt; }
+  .footer a {
+    color: white;
+    font-size: 60%; }
+
+/* This is for the contact section of the footer */
 .contact {
   text-align: left;
-  font-size: 80%; }
+  font-size: 80%;
+  /* Input fields */
+  /* Submit button */ }
   .contact .input {
     width: 100%;
     color: white;
@@ -131,32 +165,19 @@ a:hover {
   .contact .submit {
     color: white;
     font-size: 80%;
-    background-color: #e53935;
     float: right;
+    margin-bottom: 20px;
+    background-color: #e53935;
     width: 80px;
     height: 25px;
-    margin-bottom: 20px;
     border: none;
     border-radius: 4px;
     box-shadow: 0 1px 3px #666666; }
   .contact .submit:hover {
     background-color: #d52925; }
 
-.footer {
-  position: relative;
-  text-align: left;
-  font-weight: normal;
-  font-size: 110%; }
-  .footer .layout-higher {
-    top: -.5em; }
-  .footer svg {
-    width: 12pt; }
-    .footer svg path {
-      fill: white; }
-  .footer a {
-    color: white;
-    font-size: 60%; }
-
+/* End styling for page footer */
+/* For emphasizing text */
 .emphasis {
   color: #2196f3;
   font-weight: normal; }
