@@ -22,6 +22,12 @@ h1 {
   font-family: "open sans", sans-serif;
   font-weight: lighter; }
 
+a {
+  text-decoration: none; }
+
+a:hover {
+  font-weight: bold; }
+
 .header, .footer {
   background-color: #2196f3;
   color: white; }
@@ -38,6 +44,7 @@ h1 {
   font-weight: normal; }
 
 .menu-item {
+  color: white;
   margin-right: 5%; }
 
 .header-text {
@@ -94,14 +101,20 @@ h1 {
 #slide {
   border-radius: 4px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
 
 /* This will force the slide div to a fixed size.
  * Size is dependent on width of element with a 1:1 aspect ratio. */
 #slide:before {
   content: "";
-  display: block;
-  padding-top: 100%; }
+  padding-top: 100%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 4px #666666 inset;
+  position: relative;
+  float: left;
+  z-index: 2; }
 
 .contact {
   text-align: left;
