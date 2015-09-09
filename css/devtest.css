@@ -73,12 +73,13 @@ path {
   .services p {
     font-size: 75%; }
   .services .icon {
-    width: 64pt; }
+    width: 64pt;
+    height: 64pt; }
 
 /* End styling for services section */
 /* Styles icons for the Services section and panels */
 .icon {
-  padding-top: 1em;
+  margin-top: 1em;
   color: #2196f3; }
 
 /* Used for both work samples and team members */
@@ -105,7 +106,8 @@ path {
     padding-top: 20px;
     font-size: 60%; }
   .panel .icon {
-    width: 12pt; }
+    width: 12pt;
+    height: 12pt; }
 
 /* styling specific to work samples */
 .work.panel {
@@ -142,7 +144,8 @@ path {
   .footer .layout-higher {
     top: -.5em; }
   .footer svg {
-    width: 12pt; }
+    width: 12pt;
+    height: 12pt; }
   .footer a {
     color: white;
     font-size: 60%; }
@@ -161,7 +164,8 @@ path {
     border-bottom: thin solid gray;
     margin-bottom: 20px;
     padding-bottom: 5px;
-    resize: none; }
+    resize: none;
+    overflow: auto; }
   .contact .submit {
     color: white;
     font-size: 80%;

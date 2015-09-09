@@ -23,6 +23,9 @@ function startSlideShow() {
     setInterval(advanceImage, interval);
     
     // Load rest of images.
+    // Ideally the server would produce a listing of files in a slide directory,
+    // so that images could be added by simply dropping them into the directory.
+    // Then this could could be implemented in a loop by reading the file.
     images[total_imgs] = new Image();
     images[total_imgs].style.position = "absolute";
     images[total_imgs].style.width    = "100%";
