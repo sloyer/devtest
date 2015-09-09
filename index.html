@@ -200,6 +200,38 @@
                   11.53,10.63 16.00,12.21 16.00,14.00 Z" />
         </symbol>
         <!-- End Head Icon -->
+
+        <!-- Email Icon -->
+        <symbol id="mail" viewBox="0 0 16 16">
+            <path fill="black" stroke="none"
+             d="M 9.00,9.66
+                C 9.00,9.66 16.00,6.00 16.00,6.00 16.00,6.00 16.00,13.00 16.00,13.00
+                  16.00,13.55 15.55,14.00 15.00,14.00 15.00,14.00 1.00,14.00 1.00,14.00
+                  0.45,14.00 0.00,13.55 0.00,13.00 0.00,13.00 0.00,6.00 0.00,6.00
+                  0.00,6.00 7.00,9.66 7.00,9.66 7.50,9.91 7.73,10.00 8.00,10.00
+                  8.27,10.00 8.50,9.91 9.00,9.66 Z
+                M 16.00,3.00
+                C 16.00,3.00 16.00,3.76 16.00,3.76 16.00,3.76 8.00,7.96 8.00,7.96
+                  8.00,7.96 0.00,3.76 0.00,3.76 0.00,3.76 0.00,3.00 0.00,3.00
+                  0.00,2.45 0.45,2.00 1.00,2.00 1.00,2.00 15.00,2.00 15.00,2.00
+                  15.55,2.00 16.00,2.45 16.00,3.00 Z" />
+        </symbol>
+        <!-- End Email Icon -->
+
+        <!-- Pencil Icon -->
+        <symbol id="pencil" viewBox="0 0 16 16">
+            <path fill="black" stroke="none"
+             d="M 8.18,3.58
+                C 8.18,3.58 12.43,7.83 12.43,7.83 12.43,7.83 6.70,13.55 6.70,13.55
+                  6.00,14.25 2.30,15.00 2.00,15.00 1.41,15.00 1.00,14.52 1.00,14.00
+                  1.00,13.70 1.75,10.00 2.45,9.30 2.45,9.30 8.18,3.58 8.18,3.58 Z
+                M 15.00,4.00
+                C 15.00,4.69 14.75,5.50 14.11,6.14 14.11,6.14 13.83,6.42 13.83,6.42
+                  13.83,6.42 9.58,2.17 9.58,2.17 9.58,2.17 9.86,1.89 9.86,1.89
+                  10.55,1.20 11.40,1.00 12.00,1.00 13.66,1.00 15.00,2.34 15.00,4.00 Z" />
+        </symbol>
+        <!-- End Pencil Icon -->
+
     </svg>
     <!-- End svg icons for social media buttons -->
     
@@ -543,6 +575,7 @@
             <div class="row">
             
                 <!-- Contact -->
+                <form action="" method="POST">
                 <div class="contact column small-12 medium-6">
                 <div class="row">
                     <!-- Name -->
@@ -554,7 +587,7 @@
                         </div>
                     
                         <div class="column small-10">
-                        First Name
+                        <input class="input" name="firstname" type="text" placeholder="First Name" required>
                         </div>
                         
                     </div>
@@ -565,11 +598,11 @@
                     <div class="row">
                     
                         <div class="column small-2">
-                        <svg width="12pt" viewbox="0 0 16 16"><use xlink:href="#head" /></svg>
+                        <svg width="12pt" viewbox="0 0 16 16"><use xlink:href="#mail" /></svg>
                         </div>
                     
                         <div class="column small-10">
-                        Email-id
+                        <input class="input" name="email" type="email" placeholder="Email-id" required>
                         </div>
                         
                     </div>
@@ -580,17 +613,24 @@
                     <div class="row">
                     
                         <div class="column small-2 large-1">
-                        <svg width="12pt" viewbox="0 0 16 16"><use xlink:href="#head" /></svg>
+                        <svg width="12pt" viewbox="0 0 16 16"><use xlink:href="#pencil" /></svg>
                         </div>
                     
                         <div class="column small-10 large-11">
-                        Message
+                        <textarea class="input" name="message" placeholder="Message" rows="3" required></textarea>
                         </div>
                         
                     </div>
                     </div>
+ 
+                    <!-- Submit button -->
+                    <div class="column small-12">
+                        <input class="submit" name="submit" type="submit" value="SUBMIT">
+                    </div>
+
                 </div>
                 </div>
+                </form>
                 
                 <!-- Links -->
                 <div class="column small-3">

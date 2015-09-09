@@ -69,7 +69,7 @@ h1 {
   margin-bottom: 5px;
   padding-bottom: 25px;
   background-color: white;
-  box-shadow: 0 1px 3px #aaaaaa;
+  box-shadow: 0 1px 3px #666666;
   border-radius: 3px;
   overflow: hidden; }
   .panel img {
@@ -108,6 +108,27 @@ h1 {
   font-size: 80%; }
   .contact path {
     fill: white; }
+  .contact .input {
+    width: 100%;
+    color: white;
+    background-color: #2196f3;
+    border: none;
+    border-bottom: thin solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    resize: none; }
+  .contact .submit {
+    color: white;
+    font-size: 80%;
+    background-color: #e53935;
+    float: right;
+    width: 80px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #666666; }
+  .contact .submit:hover {
+    background-color: #d52925; }
 
 .emphasis {
   color: #2196f3;
