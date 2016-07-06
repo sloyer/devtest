@@ -31,7 +31,6 @@ I have three requests I want done though.
         - Push your changes
         - Then make a merge request when finished to sumbit your work. 
 
-- Make that mountain image area, a slideshow using Javascript/jQuery. 
     - Write some hand written JS to make a slideshow. Foundation gives a slideshow but I want to see some hand written JS Code. 
     
 - Header
