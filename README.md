@@ -5,6 +5,7 @@ This is just to gage where your skills are at, don't stress to much about it. Ju
   - Comments! CSS/HTML/JS/PHP, Comments are always cool, like bowties.....(20pts if you get the reference.....)
     - They make life easier for the guy after you who has to figure out why you did what you did.
   - Keep it dry, try not to repeat yourself.
+  - utilize your frameworks.
   - Learn & try something new.
      - We always try to use new tech or guidelines on projects to learn new skills or ways of structuring our code to keep things new and fresh so we don't get bored. 
 
@@ -14,9 +15,14 @@ What youll do is simple! Just take this design and recreate it. Don't worry abou
 I am just more or less going for your code and see what you can do. 
 
 I have three requests I want done though. 
-- Responsive - You can do this by hand or by using Foundation or Bootstrap OR any other framework. If you use a framework though, I am gonna expect an explanation of how it works though. 
-    - Since there is no Mobile design (This happens a lot) its up to you to decide how things stack. Think of everything in a 12 Column grid. Example the 3 icons would be in 3 DIVS and each div would contain 3 Columns equaling 12. They would simply stack on eachother at the breakpoint.
-    - Don't forget about the menu.....
+
+- Install Wordpress on a Local Machine
+    - We use Scotchbox but you can use whatever you want.
+    - Use the theme WP-Joints / The theme has great documentation btw / Zurb Foundation the framework we use has AMAZING documentation
+    - You'll need to install compass and use compass / To compile sass you need to be in the assets/scss. type 'compass watch' (command line)
+    - I don't care if you resort to the large-8 medium-4 class names but least give the CSS @includes for the grid a shot.  I can provide you for examples if you can't get it. 
+
+
 - Use [GIT](https://github.com/) to track your progress. I'd like to be able to see what you do and how you build the project. 
     - A good way to do this is commit after everytime you finish something like, Menu sections, Header section, etc. You could also just commit every 15 minutes with what you've done. Make commit messages descriptful but not to long. 
     - Fork this repo
@@ -27,6 +33,48 @@ I have three requests I want done though.
 
 - Make that mountain image area, a slideshow using Javascript/jQuery. 
     - Write some hand written JS to make a slideshow. Foundation gives a slideshow but I want to see some hand written JS Code. 
+    
+- Header
+    - Menu 
+        - Use a Wordpress Menu
+        - Just get it to look like the comp on desktop, on mobile you can do what you need. You can use a jQuery plugin to mobilize it, use foundations menu system, or write a few jQuery lines Or even just style it to look good.
+    - Big blue are
+        - Lets throw a slideshow in here that will link to off sites. 
+            - What you'll need to do is create a custom post type (pt_slideshow)
+            - Then Add custom fields to that Post type
+            - Add an Image field
+            - Add a url field
+            - Then make them display linked on the page.
+- Front 
+    - Ipsum Section
+        - That lorem ipsum area, create a custom WYSIWYG field that will render to that spot on the front page
+        - The icons 4 column deal
+            - Decide the best way to do this on your own
+            - I would use a custom fields possibly a repeater
+
+    - Work
+        - Create a post type called pt_work
+        - using Advanced custom fields give it a image field, project link, use title field 
+        - Make it look like comp.
+
+    - Mountain image
+        - Give the front page a custom field for uploading images to this section.
+        - I dont want it to work like the slide show but I want to be able to upload images and select which one I want to show
+        - However if one is not selected I want it to default a certain images
+
+    - Our Team
+        - Create a team post type
+        - Make the fields use see fit
+        - Get em to show
+
+    - Footer
+        - Give me a Social Media menu via wordpress
+        - Give me a menu for the other links
+        - Contact area
+            - There are a lot of ways to do this
+            - I condone using a plugin for this if you wish, I reccomend Contact form 7 or ninja forms. 
+
+
 
 #### Tools we use that could be helpful 
 Speaking of new things, we use these tools on almost every project, so you are more than welcome to use them and try something or use them if you know them!
