@@ -1,5 +1,7 @@
 # Dev Test
 
+steven@alopexid.com
+
 This is just to gage where your skills are at, don't stress to much about it. Just try to be clean with your code! Some recommendations I have are:
 
   - Comments! CSS/HTML/JS/PHP, Comments are always cool, like bowties.....(20pts if you get the reference.....)
@@ -31,7 +33,6 @@ I have three requests I want done though.
         - Push your changes
         - Then make a merge request when finished to sumbit your work. 
 
-    - Write some hand written JS to make a slideshow. Foundation gives a slideshow but I want to see some hand written JS Code. 
     
 - Header
     - Menu 
@@ -44,6 +45,7 @@ I have three requests I want done though.
             - Add an Image field
             - Add a url field
             - Then make them display linked on the page.
+	    - Add 4 images/links while loop it
 - Front 
     - Ipsum Section
         - That lorem ipsum area, create a custom WYSIWYG field that will render to that spot on the front page
