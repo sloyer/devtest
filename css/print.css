@@ -1,0 +1,19 @@
+/* Firefox needs to scale the page to 60% to print correctly, but
+doing it in CSS is problematic. */
+/* body { */
+/*     transform: scale(0.6); */
+/*     transform-origin: 10% 20%; */
+/* } */
+
+div#i_love_slideshow, div#i_love_footer, div#navigation {
+    display: none;
+}
+
+div#i_love_work, div#i_love_team {
+    /* does not work in Chrome */
+    page-break-before: always;
+}
+
+div#i_love_front h1, div#md_template {
+    color: #2196f3;
+}

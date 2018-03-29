@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      MD Template
+    </title>
+    <link rel="stylesheet" href="css/default.css" media="all" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <div id="i_love_front">
+      <div id="i_love_masthead">
+	<div id="md_template">
+	  MD Template
+	</div>
+	<div id="navigation">
+	  <a href="">Service</a>
+	  <a href="">Work</a>
+	  <a href="">Team</a>
+	  <a href="">Contact</a>
+	  <a href="">Download</a>
+	</div>
+      </div>
+      <h1>
+	  I&#160;Love
+      </h1>
+    </div>
+    <div id="why_i_love">
+      <!--  putting text in xml blocks, apart from links to make xpath references easier -->
+      <div class="text">
+	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </span>
+	<a href="http://www.gnu.org/software/sed/manual/sed.html">sed</a>
+	<span> do eiusmod tempor incididunt ut labore et dolore </span>
+	<a href="http://lipsum.com">magna aliqua</a>
+	<span>.</span>
+      </div>
+      <div id="reason-blocks" class="three-by">
+	<div>
+	  <img src="img_link/lightning.png" alt="" />
+	  <h2>
+	    Speeds up development
+	  </h2>
+	  <span>
+	    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+	    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+	    dolor in reprehenderit in voluptate velit esse cillum dolore eu
+	    fugiat nulla pariatur.
+	  </span>
+	</div>
+	<div>
+	  <img src="img_link/people.png" alt="" />
+	  <h2>
+	    User Experience Focused
+	  </h2>
+	  <span>
+	    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+	    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+	    dolor in reprehenderit in voluptate velit esse cillum dolore eu
+	    fugiat nulla pariatur.
+	  </span>
+	</div>
+	<div>
+	  <img src="img_link/computer.png" alt="" />
+	  <h2>
+	    Fully responsive
+	  </h2>
+	  <span>
+	    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+	    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+	    dolor in reprehenderit in voluptate velit esse cillum dolore eu
+	    fugiat nulla pariatur.
+	  </span>
+	</div>
+      </div>      
+    </div>
+    <div id="i_love_work" class="three-by">
+      <h1>
+	Work
+      </h1>
+      <div>
+	<img src="img_content/dog.jpg" alt="dog" />
+	<h2>
+	  Project Title
+	</h2>
+	<a href="">PROJECT LINK</a>
+      </div>
+      <div>
+	<img src="img_content/bison.jpg" alt="bison" />
+	<h2>Project Title</h2>
+	<a href="">PROJECT LINK</a>
+      </div>
+      <div>
+	<img src="img_content/eagle.jpg" alt="eagle" />
+	<h2>
+	  Project Title
+	</h2>
+	<a href="">PROJECT LINK</a>
+      </div>
+      <div>
+	<img src="img_content/lynx.jpg" alt="lynx" />
+	<h2>
+	  Project Title
+	</h2>
+	<a href="">PROJECT LINK</a>
+      </div>
+      <div>
+	<img src="img_content/musk-ox.jpg" alt="musk ox" />
+	<h2>
+	  Project Title
+	</h2>
+	<a href="">PROJECT LINK</a>
+      </div>
+      <div>
+	<img src="img_content/porcupine.jpg" alt="porcupine" />
+	<h2>
+	  Project Title
+	</h2>
+	<a href="">PROJECT LINK</a>
+      </div>
+    </div>
+    <div id="i_love_slideshow">
+      <!-- default image to load, other images get loaded using Ajax if JS is enabled -->
+      <!-- SVG SMIL animation works correctly in Firefox and Opera, but not in Chrome, IE, and UC  -->
+      <svg id="i_love_slideshow_svg" height="400px" width="1080px">
+	<g id="i_love_slideshow_svg_g">
+	  <!-- IE complains that these tags cannot be self-closing -->
+	  <animateMotion id="one_s" path="M 0 0"  begin="0s; six.end" dur="3s">
+	  </animateMotion>
+	  <animateMotion id="one" path="M 0 0 L -1080 0"  begin="one_s.end" dur="6s">
+	  </animateMotion>
+	  <animateMotion id="two_s" path="M -1080 0"  begin="one.end" dur="3s">
+	  </animateMotion>
+	  <animateMotion id="two" path="M -1080 0 L -2160 0"  begin="two_s.end" dur="6s">
+	  </animateMotion>
+	  <animateMotion id="three_s" path="M -2160 0"  begin="two.end" dur="3s">
+	  </animateMotion>
+	  <animateMotion id="three" path="M -2160 0 L -3240 0"  begin="three_s.end" dur="6s">
+	  </animateMotion>
+	  <animateMotion id="four_s" path="M -3240 0"  begin="three.end" dur="3s">
+	  </animateMotion>
+	  <animateMotion id="four" path="M -3240 0 L -4320 0"  begin="four_s.end" dur="6s">
+	  </animateMotion>
+	  <animateMotion id="five_s" path="M -4320 0"  begin="four.end" dur="3s">
+	  </animateMotion>
+	  <animateMotion id="five" path="M -4320 0 L -5400 0"  begin="five_s.end" dur="6s">
+	  </animateMotion>
+	  <animateMotion id="six_s" path="M -5400 0"  begin="five.end" dur="3s">
+	  </animateMotion>
+	  <animateMotion id="six" path="M -5400 0 L -6480 0"  begin="six_s.end" dur="6s">
+	  </animateMotion>
+	  
+	  <image id="i_love_slideshow_dog" xlink:href="img_slider/dog.jpg" height="400px" width="1080px" y="0" x="0">
+	  </image>
+	  <image id="i_love_slideshow_bison" xlink:href="img_slider/bison.jpg" y="0" x="1080px" height="400px" width="1080px">
+	  </image>
+	  <image id="i_love_slideshow_eagle" xlink:href="img_slider/eagle.jpg" y="0" x="2160px" height="400px" width="1080px">
+	  </image>
+	  <image id="i_love_slideshow_lynx" xlink:href="img_slider/lynx.jpg" y="0" x="3240px" height="400px" width="1080px">
+	  </image>
+	  <image id="i_love_slideshow_musk_ox" xlink:href="img_slider/musk-ox.jpg" y="0" x="4320px" height="400px" width="1080px">
+	  </image>
+	  <image id="i_love_slideshow_porcupine" xlink:href="img_slider/porcupine.jpg" y="0" x="5400px" height="400px" width="1080px">
+	  </image>
+	  <!-- first and last images are the same to create the illusion of a circular image roll -->
+	  <image id="i_love_slideshow_dog_2" xlink:href="img_slider/dog.jpg" height="400px" width="1080px" y="0" x="6480px">
+	  </image>
+	</g>
+      </svg>
+    </div>
+    <div id="i_love_team" class="four-by">
+      <h1>
+	Our Team
+      </h1>
+      <div>
+	<img src="img_content/flash.jpg" alt="" />
+	<h2>
+	  Flash
+	</h2>
+	<h3>CEO</h3>
+	<a href="http://www.facebook.com">
+	  <img src="img_link/facebook1.png" alt="Facebook" />
+	</a>
+	<a href="http://www.twitter.com">
+	  <img src="img_link/twitter.png" alt="Twitter" />
+	</a>
+	<a href="http://plus.google.com">
+	  <img src="img_link/gplus.png" alt="Google+" />
+	</a>
+	<a href="http://www.linkedin.com">
+	  <img src="img_link/linkedin1.png" alt="Linked In" />
+	</a>
+      </div>
+      <div>
+	<img src="img_content/catwoman.jpg" alt="" />
+	<h2>
+	  Cat Woman
+	</h2>
+	<h3>DESIGNER</h3>
+	<a href="http://www.facebook.com">
+	  <img src="img_link/facebook1.png" alt="Facebook" />
+	</a>
+	<a href="http://www.twitter.com">
+	  <img src="img_link/twitter.png" alt="Twitter" />
+	</a>
+	<a href="http://plus.google.com">
+	  <img src="img_link/gplus.png" alt="Google+" />
+	</a>
+	<a href="http://www.linkedin.com">
+	  <img src="img_link/linkedin1.png" alt="Linked In" />
+	</a>
+      </div>
+      <div>
+	<img src="img_content/captain_america.jpg" alt="" />
+	<h2>
+	  Capt. America
+	</h2>
+	<h3>CMO</h3>
+	<a href="http://www.facebook.com">
+	  <img src="img_link/facebook1.png" alt="Facebook" />
+	</a>
+	<a href="http://www.twitter.com">
+	  <img src="img_link/twitter.png" alt="Twitter" />
+	</a>
+	<a href="http://plus.google.com">
+	  <img src="img_link/gplus.png" alt="Google+" />
+	</a>
+	<a href="http://www.linkedin.com">
+	  <img src="img_link/linkedin1.png" alt="Linked In" />
+	</a>
+      </div>
+      <div>
+	<img src="img_content/robin.jpg" alt="" />
+	<h2>
+	  Robin
+	</h2>
+	<h3>DEVELOPER</h3>
+	<a href="http://www.facebook.com">
+	  <img src="img_link/facebook1.png" alt="Facebook" />
+	</a>
+	<a href="http://www.twitter.com">
+	  <img src="img_link/twitter.png" alt="Twitter" />
+	</a>
+	<a href="http://plus.google.com">
+	  <img src="img_link/gplus.png" alt="Google+" />
+	</a>
+	<a href="http://www.linkedin.com">
+	  <img src="img_link/linkedin1.png" alt="Linked In" />
+	</a>
+      </div>
+    </div>
+    <div id="i_love_footer">
+      <div id="contact-us">
+	<form action="_blank">
+	  <p>
+	    <img src="img_link/person.png" alt="" />
+	    <input type="text" name="fname" placeholder="First Name" />
+	  </p>
+	  <p>
+	    <img src="img_link/mail-letter.png" alt="" />
+	    <input type="text" name="email" placeholder="Email-id" />
+	  </p>
+	  <p>
+	    <img src="img_link/pencil.png" alt="" />
+	    <textarea  name="message" rows="5" cols="50" placeholder="Message" ></textarea>
+	  </p>
+	  <p>
+	    <!-- Make sure that the form does not actually submit -->
+	    <button type="button">
+	      <span>SUBMIT</span><img src="img_link/submit.png" alt="" />
+	    </button>
+	  </p>
+	</form>
+      </div>
+      <div id="links">
+	<div id="internal-links">
+	  <h1>
+	    joashpereira.com
+	  </h1>
+	  <a href="">Home</a>
+	  <a href="">Blog</a>
+	</div>
+	<div id="external-links">
+	  <h1>
+	    Social
+	  </h1>
+	  <a href="http://www.behance.net"><img src="img_link/behance.png" alt="" width="16" height="16" /><span>Behance</span></a>
+	  <a href="http://www.facebook.com"><img src="img_link/facebook2.png" alt="" width="16" height="16" /><span>Facebook</span></a>
+	  <a href="http://github.com"><img src="img_link/github.png" alt="" width="16" height="16" /><span>Github</span></a>
+	  <a href="http://www.linked.com"><img src="img_link/linkedin.png" alt="" width="16" height="16" /><span>LinkedIn</span></a>
+	</div>
+      </div>
+      <div id="made-by">
+	<span>Made by Joash Pereira. Thanks to materializecss</span>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/slideshow.js">
+    </script>
+  </body>
+</html>
